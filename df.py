@@ -21,4 +21,5 @@ users_data = [doc.to_dict() for doc in users]
 # Create DataFrame
 df = pd.DataFrame(users_data)
 
-print(df)
+#Crea el documento csv
+df.to_csv("integrador.csv", index=False)
